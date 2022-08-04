@@ -1,21 +1,23 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es6: true,
   },
   extends: [
     'plugin:react/recommended',
     'airbnb',
   ],
-  parser: '@babel/eslint-parser',
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 'latest',
+    ecmaVersion: 2018,
     sourceType: 'module',
-    requireConfigFile: false,
-    presets: ['@babel/preset-react'],
   },
   plugins: [
     'react',

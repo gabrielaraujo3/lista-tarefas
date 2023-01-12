@@ -31,5 +31,6 @@ module.exports = {
     'class-methods-use-this': 0,
     'no-console': 0,
     'react/no-unused-state': 0,
+    'react/forbid-prop-types': 0,
   },
 };
